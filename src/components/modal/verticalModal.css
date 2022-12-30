@@ -1,0 +1,22 @@
+.modal-body {
+  text-align: center;
+  padding-top: 3rem !important;
+}
+
+.modal-footer .btn {
+  background-color: var(--orange);
+  color: black;
+  border-color: var(--orange);
+}
+
+.modal-footer .btn:active {
+  background-color: var(--orange) !important;
+  color: black !important;
+  border-color: var(--orange) !important;
+}
+
+.modal-footer .btn:hover {
+  background-color: #ffa700 !important;
+  color: black !important;
+  border-color: var(--orange) !important;
+}

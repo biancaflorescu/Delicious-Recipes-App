@@ -1,0 +1,36 @@
+.search-content {
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.search-vertical-line {
+  border-left: 2px solid var(--orange);
+}
+
+.search-content .search-title {
+  font-size: 1.7rem;
+}
+
+.search-content .btn {
+  background-color: var(--orange);
+  color: black;
+  border-color: var(--orange);
+}
+
+.search-content .btn:active {
+  background-color: var(--orange) !important;
+  color: black !important;
+  border-color: var(--orange) !important;
+}
+
+.search-content .btn:hover {
+  background-color: #ffa700 !important;
+  color: black !important;
+  border-color: var(--orange) !important;
+}
+
+.search-content .col:not(.first) {
+  margin-top: 1rem;
+}

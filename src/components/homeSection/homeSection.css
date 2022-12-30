@@ -1,0 +1,17 @@
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.line {
+  height: 3px;
+  background-color: var(--orange);
+  flex: 1;
+}

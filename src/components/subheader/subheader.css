@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600;700&display=swap");
+
+.app-title {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+.subheader {
+  margin-top: 80px;
+  background-color: var(--orange);
+  padding-block: 3rem;
+  margin-bottom: 3rem;
+}
+
+.subheader-title {
+  font-size: 4rem;
+  margin-bottom: 7px;
+}

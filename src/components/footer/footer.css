@@ -1,0 +1,46 @@
+.footer {
+  margin-top: 5rem;
+}
+
+.footer-container {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-submit {
+  background-color: var(--orange) !important;
+}
+
+.btn-submit:hover {
+  background-color: #ffa700 !important;
+}
+
+.footer-text1 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.footer-text2 {
+  margin-bottom: 0.7rem;
+}
+
+.footer-social {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .bi {
+  cursor: pointer;
+}
+
+.footer .bi:hover {
+  fill: var(--orange);
+}
+
+.footer .form-control:focus {
+  border-color: #ced4da !important;
+  box-shadow: none !important;
+}

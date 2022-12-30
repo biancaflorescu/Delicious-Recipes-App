@@ -1,0 +1,112 @@
+.about-container {
+  text-align: center;
+}
+
+.about-title {
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  border: 5px solid var(--orange);
+}
+
+.about-icons-container {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.about-summary {
+  width: 60vw;
+  margin-inline: auto;
+  background-color: #80808042;
+  padding: 2rem;
+}
+
+.about-summary p {
+  margin: 0;
+}
+
+.wine-pairing {
+  width: 60vw;
+  margin-inline: auto;
+  margin-top: 2rem;
+  background-color: #f9a912a3;
+  padding: 2rem;
+}
+
+.wine-pairing .wine {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-inline: 3rem;
+}
+
+.wine-pairing .wine img {
+  height: 150px;
+  border: 1px solid var(--black);
+}
+
+.wine-pairing .wine a {
+  color: var(--black);
+}
+
+.about-ingredients {
+  margin-top: 2rem;
+  width: 60vw;
+  margin-inline: auto;
+}
+
+.about-ingredients .title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.ingredient img {
+  height: 69px;
+  margin-bottom: 0.3rem;
+}
+
+.ingredient p {
+  margin-bottom: 0.5rem;
+}
+
+.ingredient-measure {
+  font-weight: 500;
+}
+
+.about-summary a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.about-summary a:hover {
+  color: var(--black);
+  cursor: auto;
+}
+
+.mtop {
+  margin-top: 3rem;
+}
+
+.about-steps {
+  width: 60vw;
+  margin-inline: auto;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.about-steps span {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
