@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+# Delicious - Recipes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The objective of my project is to create a website that contains a multitude of culinary recipes to help people who are passionate about cooking. My project name is DELICIOUS and you can find it here: https://lovely-marshmallow-86deca.netlify.app/
 
-## Available Scripts
+The technologies I have used are **HTML, CSS, JavaScript** and as libraries I have used **React** and **Bootstrap**. All the data for this project is taken from an online API, named spoonacular API, using the fetch method. 
 
-In the project directory, you can run:
+The project consists of several pages, such as: the main page displaying 8 random recipes, a page displaying 12 recipes from a certain category, a category that can be selected by clicking on one of the 4 dropdown selections in the navbar, functionality implemented using the useParams and useSearchParams methods.
 
-### `npm start`
+The other pages are the search page, where the user can search by ingredients or by nutrients, filling in the related forms and the details page, a page where you are redirected by clicking on any recipe from any page, implemented using its ID. The details page contains more information about a recipe, such as: wine pairing, ingredients and instructions. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Each page, besides a navbar that I’ve already talked about, has a footer, where the user can fill a form to subscribe for newsletters. The functionality implemented here is that after submitting, a modal window with a thank you message is being displayed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A problem I encountered was the fact that some recipes’ data from this API comes empty. In order not to give an error and not to block the whole project, I added an implementation using the ternary operator to set default data.
