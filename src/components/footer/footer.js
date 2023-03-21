@@ -31,7 +31,7 @@ const Footer = () => {
           <p className="footer-text1">Ready to cook?</p>
           <p className="footer-text2">Sign up for our weekly newsletters!</p>
           <form
-            className="row g-3"
+            className="row g-3 footer-form"
             onSubmit={(e) => {
               e.preventDefault();
               setModalShow(true);

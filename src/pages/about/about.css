@@ -110,3 +110,18 @@
   font-size: 1.5rem;
   margin-right: 1rem;
 }
+
+@media screen and (max-width: 500px) {
+  .wine-pairing .wine {
+    display: block;
+    margin-inline: 0;
+  }
+
+  .wine p {
+    margin-top: 1rem;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+}

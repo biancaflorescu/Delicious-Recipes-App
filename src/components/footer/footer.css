@@ -44,3 +44,24 @@
   border-color: #ced4da !important;
   box-shadow: none !important;
 }
+
+@media screen and (max-width: 500px) {
+  .footer-container {
+    display: block;
+  }
+
+  .footer-section {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-form {
+    display: flex;
+    justify-content: center;
+  }
+}
