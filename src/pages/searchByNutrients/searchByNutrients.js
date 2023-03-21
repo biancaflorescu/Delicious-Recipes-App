@@ -1,7 +1,6 @@
-import { useEffectOnce } from "../../customHooks/customHooks";
 import { getRecipesByNutrients } from "../../services/api";
 import { useSearchParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import HomeSection from "../../components/homeSection/homeSection";
 import MiniRecipeCardNutrients from "../../components/miniRecipeCardNutrients/miniRecipeCardNutrients";
@@ -22,7 +21,7 @@ const SearchByNutrients = () => {
   const minFat = searchParams.get("minFat");
   const maxFat = searchParams.get("maxFat");
 
-  useEffectOnce(() => {
+  useEffect(() => {
     const getData = async () => {
       const data = await getRecipesByNutrients(
         minCalories,

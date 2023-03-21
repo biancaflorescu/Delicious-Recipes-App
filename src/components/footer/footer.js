@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Container } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import VerticalModal from "../modal/verticalModal";

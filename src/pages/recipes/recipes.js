@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useEffectOnce } from "../../customHooks/customHooks";
+import { useEffect, useState } from "react";
 import HomeSection from "../../components/homeSection/homeSection";
 import { useParams } from "react-router-dom";
 import RecipeCard from "../../components/card/recipeCard";
@@ -16,7 +15,7 @@ const Recipes = () => {
   const paramsUpperCase =
     params.tag.charAt(0).toUpperCase() + params.tag.slice(1);
 
-  useEffectOnce(() => {
+  useEffect(() => {
     const getData = async (paramsTag) => {
       const data = await getRandomRecipesByTag(paramsTag);
 

@@ -1,5 +1,4 @@
-import { useEffectOnce } from "../../customHooks/customHooks";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import RecipeCard from "../../components/card/recipeCard";
 import HomeSection from "../../components/homeSection/homeSection";
@@ -12,7 +11,7 @@ const Home = () => {
   const [randomNewRecipes, setRandomNewRecipes] = useState([]);
   const [randomPopularRecipes, setRandomPopularRecipes] = useState([]);
 
-  useEffectOnce(() => {
+  useEffect(() => {
     const getData = async () => {
       const data = await getRandomRecipes();
 

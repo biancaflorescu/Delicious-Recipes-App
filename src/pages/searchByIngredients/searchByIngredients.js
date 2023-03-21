@@ -1,8 +1,7 @@
-import { useEffectOnce } from "../../customHooks/customHooks";
 import { getRecipesByIngredients } from "../../services/api";
 import { useSearchParams } from "react-router-dom";
 import MiniRecipeCardIngredients from "../../components/miniRecipeCardIngredients/miniRecipeCardIngredients";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import HomeSection from "../../components/homeSection/homeSection";
 
@@ -15,7 +14,7 @@ const SearchByIngredients = () => {
 
   const ingredients = searchParams.get("ingredients");
 
-  useEffectOnce(() => {
+  useEffect(() => {
     const getData = async () => {
       const data = await getRecipesByIngredients(ingredients);
       console.log(data);

@@ -1,7 +1,6 @@
 import { Container } from "react-bootstrap";
-import { useEffectOnce } from "../../customHooks/customHooks";
 import { getRecipeInformation } from "../../services/api";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import "./about.css";
@@ -13,7 +12,7 @@ const About = () => {
   const id = params.id;
   console.log(id);
 
-  useEffectOnce(() => {
+  useEffect(() => {
     const getData = async () => {
       const data = await getRecipeInformation(id);
       console.log(data);
